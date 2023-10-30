@@ -8,11 +8,11 @@ import telegram
 import random
 
 TOKEN = os.environ['TELEGRAM_TOKEN']
-CHAT_ID = <ADD_YOUR_CHAT_ID>
+CHAT_ID = <-1002036026113>
 
 def send_photo(event, context):
     bot = telegram.Bot(token=TOKEN)
     photo_url = 'flashcards_folder/'
     rand_photo = random.choice(os.listdir(photo_url))
     with open(os.path.join(photo_url, rand_photo), 'rb') as file:
-        bot.sendPhoto(chat_id = CHAT_ID, photo = file)
+        bot.sendPhoto(chat_id = -1002036026113, photo = file)
