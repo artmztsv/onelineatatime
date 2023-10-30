@@ -11,4 +11,4 @@ functions:
   cron:
     handler: handler.send_photo
     events:
-      - schedule: cron(00 06,18 * * ? *)
+      - schedule: cron(00 12 * * ? *)
